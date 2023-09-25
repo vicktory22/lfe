@@ -1,0 +1,21 @@
+---
+import RootLayout from '../layouts/RootLayout.astro';
+---
+
+<RootLayout title="Welcome to Astro.">
+  <div class="flex justify-center items-center w-full h-screen">
+    <div id="sign-in"></div>
+  </div>
+
+  <script is:inline>
+    addEventListener('load', async function () {
+      await window.Clerk.load();
+
+      window.Clerk.mountSignIn(document.getElementById("sign-in"), {
+        signUpUrl: "/signup",
+        afterSignInUrl: "/",
+      });
+    });
+  </script>
+
+</RootLayout>

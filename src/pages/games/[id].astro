@@ -1,0 +1,16 @@
+---
+export const prerender = false;
+
+import AppLayout from '../../layouts/AppLayout.astro';
+import GamePage from '../../components/GamePage.svelte';
+import Header from '../../components/Header.astro';
+
+const { id } = Astro.params;
+---
+
+<AppLayout>
+  <Header title="Select Game" />
+  <GamePage gameId={id} client:only="svelte" />
+</AppLayout>
+
+

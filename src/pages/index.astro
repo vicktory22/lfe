@@ -1,0 +1,10 @@
+---
+import AppLayout from '../layouts/AppLayout.astro';
+import Header from '../components/Header.astro';
+import Dashboard from '../components/Dashboard.svelte';
+---
+
+<AppLayout>
+  <Header title="Lockrace" />
+  <Dashboard client:only="svelte" />
+</AppLayout>

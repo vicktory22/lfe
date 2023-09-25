@@ -1,0 +1,10 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import Header from '../../components/Header.astro';
+import PlayersPage from '../../components/PlayersPage.svelte';
+---
+
+<AppLayout>
+  <Header title="All Players" />
+  <PlayersPage client:only="svelte" />
+</AppLayout>

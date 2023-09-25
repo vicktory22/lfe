@@ -1,0 +1,10 @@
+---
+import AppLayout from '../../layouts/AppLayout.astro';
+import Header from '../../components/Header.astro';
+import ScoreboardPage from '../../components/ScoreboardPage.svelte';
+---
+
+<AppLayout>
+  <Header title="Scoreboard" />
+  <ScoreboardPage client:only="svelte" />
+</AppLayout>

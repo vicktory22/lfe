@@ -1,0 +1,12 @@
+---
+import RootLayout from "./RootLayout.astro";
+import MenuButton from "../components/MenuButton.astro";
+---
+
+<RootLayout>
+  <div class="container container-lg mx-auto">
+    <slot />
+  </div>
+
+  <MenuButton />
+</RootLayout>
