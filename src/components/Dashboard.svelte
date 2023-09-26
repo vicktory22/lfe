@@ -3,7 +3,7 @@
   import LoadingHero from "./LoadingHero.svelte";
   import MyPicks from "./MyPicks.svelte";
 
-  const fetchPicks = fetch(`${import.meta.env.PUBLIC_API_URL}/picks`, {
+  const fetchPicks = fetch('https://lbe-production.vicktory22.workers.dev/picks', {
     credentials: "include",
   }).then((r) => {
     if (r.status === 401) {

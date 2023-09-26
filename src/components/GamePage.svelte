@@ -5,7 +5,7 @@
 
   export let gameId: string;
   
-  const fetchGame = fetch(`${import.meta.env.PUBLIC_API_URL}/games`, {
+  const fetchGame = fetch('https://lbe-production.vicktory22.workers.dev/games', {
     credentials: "include",
   })
     .then((r) => {
