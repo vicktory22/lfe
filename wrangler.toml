@@ -1,0 +1,4 @@
+name = "lockrace-astro"
+main = "./dist"
+compatibility_date = "2023-08-14"
+logpush = true
