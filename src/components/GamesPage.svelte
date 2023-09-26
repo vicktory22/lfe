@@ -3,7 +3,7 @@
   import GamesList from "./GamesList.svelte";
   import LoadingHero from "./LoadingHero.svelte";
 
-  const fetchGames = fetch(`${import.meta.env.PUBLIC_API_URL}/games`, {
+  const fetchGames = fetch('https://lbe-production.vicktory22.workers.dev/games', {
     credentials: "include",
   }).then((r) => {
     if (r.status === 401) {

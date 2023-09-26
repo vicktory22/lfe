@@ -7,7 +7,7 @@
   let error: Error;
 
   async function makePick(homeOrAway: string) {
-    await fetch(`${import.meta.env.PUBLIC_API_URL}/picks`, {
+    await fetch('https://lbe-production.vicktory22.workers.dev/picks', {
       method: "POST",
       credentials: "include",
       headers: {
